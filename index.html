@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="estilobit1.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Bitacora 3</h1>
+        </header>
+        <menu>
+            <a href="#frame" class="bot">Frameworks</a>
+            <a href="#uresp" class="bot">Unidades Responsivas</a>
+            <a href="#mobilef" class="Mobile First">DOM</a>
+            <a href="#grid" class="bot">Modulo grid</a>
+            <a href="#supp" class="bot">@Supports</a>
+
+        </menu>
+           
+            <fieldset><legend><h2 id="frame">Frameworks</h2></legend>
+                <div>
+                    <h2>Que son los Frameworks?</h2>
+                </div>  
+                <p>Los frameworks son herramientas que ayudan a los diseñadores web a estructurar un proyecto. Tienen bibliotecas con templates que se pueden usar facilmente para agregar a el proyecto lo que se necesita, tal como: botones o scripts de java. Algunos frameworks son: 
+                    <br>Bootstrap
+                    <br>Foundation
+                    <br>Bulma
+                    <br>Skeleton
+                    <br>Materialize</p>
+            </fieldset>              
+            <fieldset><legend><h2 id="uresp">Unidades Responsivas</h2></legend>
+                <div>
+                    <h2>Que son las Unidades Responsivas?</h2>
+                </div>
+                <div>
+                    <p>Son medidas que se adaptan de manera dinámica en función del tamaño de la pantalla, la ventana del navegador o el contenedor principal.
+
+                        <br>Vmin y Vmax  
+                        Estas unidades toman el valor mínimo y máximo entre el ancho y la altura de la ventana, respectivamente, permitiendo una mayor adaptabilidad, especialmente cuando la orientación de la pantalla puede cambiar.
+                        
+                       <br>Unidades Dinámicas de Vista de Ventana  
+                        Las unidades dinámicas brindan una precisión superior en el diseño responsivo, ya que se ajustan a las variaciones de tamaño en la ventana gráfica de dispositivos móviles. Sin embargo, al ser relativamente recientes, su compatibilidad en diferentes navegadores puede variar. Las principales unidades dinámicas de vista de ventana son:
+                        
+                        <br>dvh (Dynamic viewport height): Representa el 1% de la altura dinámica de la ventana gráfica y se ajusta en tiempo real con los cambios de interfaz, como la aparición o desaparición de barras de navegación.
+                        <br>svh (Small viewport height): Representa el 1% de la menor altura de ventana gráfica registrada por el navegador.
+                        <br>lvh (Large viewport height): Corresponde al 1% de la altura máxima registrada de la ventana gráfica, útil para aprovechar el espacio total disponible en la pantalla.</p>
+                <div>  
+            </fieldset>
+            <fieldset><legend><h2 id="Mobilef">"Mobile first"</h2></legend>
+                <div>
+                    <h2>Que es el metodo Mobile First?</h2>
+                </div>
+                <div>
+                    <p>El enfoque mobile first en diseño web adaptativo se basa en crear primero la interfaz para dispositivos móviles pequeños, como teléfonos inteligentes, y luego adaptarla gradualmente a pantallas más grandes, como las de tablets y computadoras de escritorio. Este enfoque garantiza que el contenido y las funciones esenciales estén optimizados para los usuarios móviles, que suelen ser mayoría, antes de incorporar elementos más complejos que requieren mayor espacio en pantalla.
+
+                        <br>Ventajas del enfoque mobile first:
+                        <br>Optimización de contenido y velocidad: Al enfocarse en lo esencial desde el principio, se consigue que la página cargue más rápido en dispositivos con menor capacidad de procesamiento y en redes más lentas.
+                        <br>Mejora de la experiencia de usuario en móviles: Al dar prioridad al diseño móvil, la interfaz se ajusta mejor a las necesidades de los usuarios que navegan desde sus teléfonos.</p>
+                </div>
+            </fieldset>
+            <fieldset><legend><h2 id="grid">Modulo Grid</h2></legend>
+                <div>
+                    <h2>Que es el Modulo Grid?</h2>
+                </div>
+                <div>
+                    <p>El objetivo es aprender a configurar tanto el contenedor principal de un módulo grid como sus elementos internos. En el pasado se usaban métodos como las propiedades de table, float, position y display, pero estos no ofrecían ciertas funcionalidades clave, como el centrado vertical. Grid es un sistema de diseño en dos dimensiones basado en cuadrículas, diseñado específicamente para resolver problemas de diseño web, a diferencia de flexbox, que maneja un flujo unidireccional y tiene otros casos de uso. Grid permite crear una estructura de cuadrículas definidas. 
+
+                        Para usarlo, se debe asignar a un elemento la propiedad `display: grid`. Este sistema organiza el contenido mediante columnas en vertical y filas en horizontal.
+                        
+                        <br>Grid Template Areas  
+                        <br>Esta es una propiedad de CSS usada en CSS Grid Layout para crear y organizar la cuadrícula de forma visual y fácil de entender. Permite definir áreas con nombres específicos dentro de la cuadrícula, asignando un nombre único a cada una para luego posicionar elementos en ellas.</p>
+                </div>
+               </fieldset>
+               <fieldset><legend><h2 id="supp">@Supports</h2></legend>
+                <div>
+                    <h2>Que son los @Supports?</h2>
+                </div>
+                <div>
+                    <p>La regla @supports en CSS permite verificar si el navegador es compatible con una característica específica de CSS y, en función de esto, aplicar estilos adicionales. Esto es útil para implementar funciones modernas mientras se asegura que los navegadores sin soporte mantengan un diseño funcional. La estructura básica de @supports es la siguiente:
+
+                        <br>@supports (propiedad: valor){
+                            <br>elemento{
+                                <br>propiedad: valor;
+                                <br>}
+                                <br>}
+                        
+                        
+                        <br>La regla @supports permite usar los siguientes operadores lógicos:
+                        <br>and: ambas condiciones deben ser verdaderas.
+                        <br>or: al menos una de las condiciones debe ser verdadera.
+                        <br>not: la condición debe ser falsa para cumplirse.
+                        
+                        <br>Mejora Progresiva y Degradación Elegante
+                        <br>Mejora Progresiva: Esta estrategia de diseño crea una versión básica y funcional para todos los navegadores y luego se agregan características avanzadas para aquellos que las soportan.
+                        <br>Degradación Elegante: Consiste en desarrollar una versión avanzada de la funcionalidad y asegurar que, si no es compatible, se degrade de forma aceptable.</p>
+                </div>
+               </fieldset>       
+        <div id="footer">
+        </div>                               
+    </div>
+</main>
+</body>
+</html>
